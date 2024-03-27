@@ -1,0 +1,82 @@
+@import url(./fonts.css);
+@import url(./root.css);
+@import url(./support.css);
+@import url(./bootstrap@5.3.3.css);
+
+.card {
+  border: 1px solid #e8e7e7;
+  border-radius: 12px;
+  background: var(--bs-body-bg);
+  box-shadow: 0px 1px 50px 0px #00000014;
+}
+.card:hover {
+  background: var(--bs-primary-bg-subtle);
+  /* cursor: pointer; */
+}
+.icon-box {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+}
+h5 {
+  font-family: var(--st-font-primary-semibold);
+  font-size: 16px;
+}
+h6 {
+  font-family: var(--st-font-primary);
+  color: var(--st-font-black);
+  font-size: 32px;
+  line-height: 40.16px;
+}
+p {
+  font-family: var(--st-font-primary-bold);
+  color: var(--st-font-gray);
+  font-size: 16px;
+  line-height: 20.08px;
+}
+button {
+  width: 58px;
+  height: 23px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: var(--bs-black);
+  font-family: var(--st-font-primary-semibold);
+  font-size: 12px;
+}
+
+.col-6:nth-child(1) button {
+  background: var(--st-card-bg-sugar);
+}
+.col-6:nth-child(1) .icon-box {
+  background: var(--st-card-bg-sugar);
+}
+.col-6:nth-child(2) button {
+  background: var(--st-card-bg-rate);
+}
+.col-6:nth-child(2) .icon-box {
+  background: var(--st-card-bg-rate);
+}
+.col-6:nth-child(3) .icon-box {
+  background: var(--st-card-bg-press);
+}
+.col-6:nth-child(3) button {
+  background: var(--st-card-bg-press);
+}
+.col-6:nth-child(4) .icon-box {
+  background: var(--st-card-bg-temp);
+}
+.col-6:nth-child(4) button {
+  background: var(--st-card-bg-temp);
+}
+
+@media screen and (max-width: 767px) {
+  .navbar > .container-fluid {
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+}
